@@ -32,4 +32,8 @@ public class Node {
     public void setData(Student data) {
         this.data = data;
     }
+
+    public int compareTo(Student data) {
+        return this.data.getRollNo() - data.getRollNo();
+    }
 }

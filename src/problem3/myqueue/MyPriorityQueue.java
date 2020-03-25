@@ -27,10 +27,27 @@ public class MyPriorityQueue {
             rear = node;
             size++;
         } else {
+            boolean response = false;
+            Node temp = front;
+            while (temp.getNext() != null) {
+                int k = node.compareTo(temp.getData());
+                if (k > 0) {
+                    node.setNext(temp);
+                    front = node;
+                    size++;
+                    break;
+                } else if (k <= 0) {
+                    rear.setNext(node);
+                    rear = node;
+                    size++;
+                    break;
+                }
+            }
 
+        }
         }
 
     }
 
-}
+
 
