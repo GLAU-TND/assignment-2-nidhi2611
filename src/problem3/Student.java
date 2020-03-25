@@ -24,4 +24,10 @@ public class Student {
     public void setRollNo(int rollNo) {
         this.rollNo = rollNo;
     }
+
+    @Override
+    public void toString() {
+        System.out.println("Student Name  " + getName());
+        System.out.println("Student RollNo." + getRollNo());
+    }
 }
