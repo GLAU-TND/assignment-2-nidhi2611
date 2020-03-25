@@ -10,4 +10,9 @@ public class Student {
     private int backlogCount;
     private String studentName;
 
+    public Student(String studentName, int back) {
+        this.studentName = studentName;
+        backlogCount = back;
+    }
+
 }
