@@ -7,4 +7,7 @@
 package problem5.node;
 // to define node properties
 public class Node {
+    private Node rear;
+    private Node front;
+    private int size;
 }
