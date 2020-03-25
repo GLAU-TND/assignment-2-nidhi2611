@@ -15,4 +15,13 @@ public class Node {
         size = 0;
 
     }
+
+    public int getSize() {
+        return size;
+    }
+
+    public Node getRear() {
+        return rear;
+    }
+
 }
