@@ -15,4 +15,11 @@ public class Student {
         backlogCount = back;
     }
 
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public int getBacklogCount() {
+        return backlogCount;
+    }
 }
