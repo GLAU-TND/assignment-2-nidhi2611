@@ -25,4 +25,11 @@ public class Node {
         return data;
     }
 
+    public void setNext(Node next) {
+        this.next = next;
+    }
+
+    public void setData(Student data) {
+        this.data = data;
+    }
 }
