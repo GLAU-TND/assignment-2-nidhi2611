@@ -16,4 +16,13 @@ public class Node {
         data = d;
         next = null;
     }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public Student getData() {
+        return data;
+    }
+
 }
