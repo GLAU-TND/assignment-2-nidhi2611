@@ -54,4 +54,12 @@ public class MyCircularQueue {
         }
         return response;
     }
+
+    public Node peek() {
+        Node response = null;
+        if (!isEmpty()) {
+            response = rear.getNext();
+        }
+        return response;
+    }
 }
