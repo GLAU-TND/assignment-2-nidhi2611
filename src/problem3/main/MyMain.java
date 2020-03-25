@@ -17,10 +17,20 @@ public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue queue = new MyPriorityQueue();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Student name");
-        String n = sc.nextLine();
-        System.out.println("Enter the Roll Number for the student");
-        int r = sc.nextInt();
-        Student student = new Student(n, r);
+        System.out.println("ENTER THE CHOICE .ENTER 1 TO INSERT.ENTER 2 TO VIEW");
+        int ch = sc.nextInt();
+        switch (ch) {
+            case 1:
+                System.out.println("Enter the Student name");
+                String n = sc.nextLine();
+                System.out.println("Enter the Roll Number for the student");
+                int r = sc.nextInt();
+                Student student = new Student(n, r);
+                queue.enqueue(student);
+                break;
+            default:
+                System.out.println("WRong choice");
+        }
+
     }
 }
