@@ -17,12 +17,12 @@ public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue queue = new MyPriorityQueue();
         Scanner sc = new Scanner(System.in);
-        System.out.println("ENTER THE CHOICE .ENTER 1 TO INSERT.ENTER 2 TO VIEW");
+        System.out.println("ENTER THE CHOICE .ENTER 1 TO INSERT and TO VIEW");
         int ch = sc.nextInt();
         sc.nextLine();
         switch (ch) {
             case 1:
-                for (int i = 0; i <= 5; i++) {
+                for (int i = 0; i <= 4; i++) {
                     System.out.println("Enter the Student name");
                     String n = sc.nextLine();
                     System.out.println("Enter the Roll Number for the student");
@@ -31,9 +31,8 @@ public class MyMain {
                     queue.enqueue(student);
                     sc.nextLine();
                 }
-                break;
-            case 2:
                 queue.show();
+                break;
             default:
                 System.out.println("WRong choice");
         }
