@@ -6,6 +6,7 @@
  */
 package problem5.main;
 
+import problem5.circularqueue.MyCircularQueue;
 import problem5.student.Student;
 
 import java.util.Scanner;
@@ -14,6 +15,8 @@ import java.util.Scanner;
 public class MyMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        MyCircularQueue myCircularQueue;
+        myCircularQueue = new MyCircularQueue();
         System.out.println("Enter the size of Student list");
         int size = sc.nextInt();
         for (int i = 0; i < size; i++) {
@@ -22,6 +25,8 @@ public class MyMain {
             System.out.println("ENTER THE NUMBER OF BACKLOGS");
             int b = sc.nextInt();
             Student student = new Student(s, b);
+            myCircularQueue.enqueue(student);
         }
+
     }
 }
