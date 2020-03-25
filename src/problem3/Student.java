@@ -26,8 +26,9 @@ public class Student {
     }
 
     @Override
-    public void toString() {
+    public String toString() {
         System.out.println("Student Name  " + getName());
         System.out.println("Student RollNo." + getRollNo());
+        return "";
     }
 }
