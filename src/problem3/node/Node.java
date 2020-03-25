@@ -7,4 +7,6 @@
 package problem3.node;
 
 public class Node {
+    private Student data;
+    private Node next;
 }
