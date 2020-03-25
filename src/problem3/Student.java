@@ -8,4 +8,13 @@ public class Student {
         name = s;
         rollNo = r;
     }
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
 }
