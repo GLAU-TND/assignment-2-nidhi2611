@@ -22,6 +22,13 @@ public class MyPriorityQueue {
 
     public void enqueue(Student data) {
         Node node = new Node(data);
+        if (front == null) {
+            front = node;
+            rear = node;
+            size++;
+        } else {
+
+        }
 
     }
 
