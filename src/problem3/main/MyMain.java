@@ -18,7 +18,9 @@ public class MyMain {
         MyPriorityQueue queue = new MyPriorityQueue();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Student name");
-
-        Student student = new Student()
+        String n = sc.nextLine();
+        System.out.println("Enter the Roll Number for the student");
+        int r = sc.nextInt();
+        Student student = new Student(n, r);
     }
 }
