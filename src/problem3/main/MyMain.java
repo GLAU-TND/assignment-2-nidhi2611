@@ -19,15 +19,21 @@ public class MyMain {
         Scanner sc = new Scanner(System.in);
         System.out.println("ENTER THE CHOICE .ENTER 1 TO INSERT.ENTER 2 TO VIEW");
         int ch = sc.nextInt();
+        sc.nextLine();
         switch (ch) {
             case 1:
-                System.out.println("Enter the Student name");
-                String n = sc.nextLine();
-                System.out.println("Enter the Roll Number for the student");
-                int r = sc.nextInt();
-                Student student = new Student(n, r);
-                queue.enqueue(student);
+                for (int i = 0; i <= 5; i++) {
+                    System.out.println("Enter the Student name");
+                    String n = sc.nextLine();
+                    System.out.println("Enter the Roll Number for the student");
+                    int r = sc.nextInt();
+                    Student student = new Student(n, r);
+                    queue.enqueue(student);
+                    sc.nextLine();
+                }
                 break;
+            case 2:
+                queue.show();
             default:
                 System.out.println("WRong choice");
         }
