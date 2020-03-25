@@ -24,4 +24,11 @@ public class Node {
         return rear;
     }
 
+    public void setRear(Node rear) {
+        this.rear = rear;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
 }
