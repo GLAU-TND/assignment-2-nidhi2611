@@ -22,9 +22,10 @@ public class MyCircularQueue {
 
     public void enqueue(Student data) {
         Node node = new Node(data);
-        if (!isEmpty()) {
+        if (isEmpty()) {
             rear = node;
             size++;
+            node.setNext(node);
         } else {
             node.setNext(rear.getNext());
             rear.setNext(node);
@@ -32,6 +33,14 @@ public class MyCircularQueue {
             size++;
         }
 
+    }
+
+    public Node getRear() {
+        return rear;
+    }
+
+    public int getSize() {
+        return size;
     }
 
     private boolean isEmpty() {
