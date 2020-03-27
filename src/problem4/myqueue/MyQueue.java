@@ -29,5 +29,46 @@ public class MyQueue {
 
     }
 
+    public Node getFront() {
+
+        return front;
+
+    }
+
+
+    public void setFront(Node front) {
+
+        this.front = front;
+
+    }
+
+
+    public Node getEnd() {
+
+        return end;
+
+    }
+
+
+    public void setEnd(Node end) {
+
+        this.end = end;
+
+    }
+
+
+    public Node getTmp() {
+
+        return tmp;
+
+    }
+
+
+    public void setTmp(Node tmp) {
+
+        this.tmp = tmp;
+
+    }
+
 
 }
