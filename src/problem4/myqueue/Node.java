@@ -9,4 +9,11 @@ public class Node {
         next = null;
     }
 
+    public int getData() {
+        return data;
+    }
+
+    public Node getNext() {
+        return next;
+    }
 }
