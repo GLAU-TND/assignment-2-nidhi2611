@@ -23,5 +23,6 @@ public class MyMain {
             tree.add(sc.nextInt());
         }
         queue.enqueue(tree.root);
+        queue.printQueue();
     }
 }
