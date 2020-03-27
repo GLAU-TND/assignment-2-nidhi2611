@@ -22,6 +22,7 @@ public class MyMain {
         myBinarySearchTree.add(sc.nextInt());
         myBinarySearchTree.add(sc.nextInt());
         myBinarySearchTree.add(sc.nextInt());
-
+        myBinarySearchTree.add(sc.nextInt());
+        MyBinarySearchTree.preOrder(myBinarySearchTree.root);
     }
 }
