@@ -19,6 +19,8 @@ public class MyMain {
         MyQueue queue = new MyQueue();
         System.out.println("no of elements you want to add");
         Scanner sc = new Scanner(System.in);
-
+        for (int i = 0; i < sc.nextInt(); i++) {
+            tree.add(sc.nextInt());
+        }
     }
 }
