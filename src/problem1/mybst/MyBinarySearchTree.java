@@ -10,9 +10,13 @@ import problem1.node.TreeNode;
 
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
-    public static StringBuffer preOrderString;
+    public static StringBuilder preOrderString;
     static int levels = 0;
     public TreeNode root;
 
+    public MyBinarySearchTree() {
+        this.root = null;
+        preOrderString = new StringBuilder();
 
+    }
 }
