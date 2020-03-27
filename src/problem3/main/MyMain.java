@@ -22,7 +22,7 @@ public class MyMain {
         sc.nextLine();
         switch (ch) {
             case 1:
-                for (int i = 0; i <= 4; i++) {
+                for (int i = 0; i <= 5; i++) {
                     System.out.println("Enter the Student name");
                     String n = sc.nextLine();
                     System.out.println("Enter the Roll Number for the student");

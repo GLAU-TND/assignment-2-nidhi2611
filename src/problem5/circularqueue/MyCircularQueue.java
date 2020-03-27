@@ -12,8 +12,8 @@ import problem5.student.Student;
 
 //to implement circular queue
 public class MyCircularQueue {
-    private Node rear;
-    private int size;
+    private static Node rear;
+    private static int size;
 
     public MyCircularQueue() {
         rear = null;
@@ -43,14 +43,14 @@ public class MyCircularQueue {
         return size;
     }
 
-    private boolean isEmpty() {
+    private static boolean isEmpty() {
         boolean response = false;
         if (rear == null)
             response = true;
         return response;
     }
 
-    public boolean dequeue() {
+    public static boolean dequeue() {
         boolean response = false;
         if (!isEmpty()) {
             size--;
@@ -70,5 +70,23 @@ public class MyCircularQueue {
             response = rear.getNext();
         }
         return response;
+    }
+
+    public int remove() {
+        int k = 0;
+        int l = 0;
+        Node head = rear.getNext();
+        while (l < size) {
+            if (head.getData().getBacklogCount() == 0) {
+                ++k;
+                System.out.println(head.getData().getStudentName());
+                head = head.getNext();
+                ++l;
+            } else {
+                head = head.getNext();
+                ++l;
+            }
+        }
+        return k;
     }
 }
