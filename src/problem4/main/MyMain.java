@@ -37,6 +37,7 @@ public class MyMain {
         m.insert(root, 45);
 
         m.insert(root, 6);
+        q.preOrder(root);
 
     }
 }
