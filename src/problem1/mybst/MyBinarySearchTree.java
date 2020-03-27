@@ -28,4 +28,12 @@ public class MyBinarySearchTree {
         preOrder(root.getLeft());
         preOrder(root.getRight());
     }
+
+    public void add(final int value) {
+        this.root = addService(this.root, value);
+    }
+
+    private TreeNode addService(TreeNode treeRoot, int value) {
+        return treeRoot;
+    }
 }
