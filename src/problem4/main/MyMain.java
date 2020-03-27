@@ -39,6 +39,9 @@ public class MyMain {
         m.insert(root, 6);
         q.preOrder(root);
         q.queuePrint(q);
+        System.out.print("Enter to find preorder Successor : ");
+
+        q.printSuccessor(sc.nextInt());
 
     }
 }
