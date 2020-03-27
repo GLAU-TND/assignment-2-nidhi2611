@@ -19,4 +19,13 @@ public class MyBinarySearchTree {
         preOrderString = new StringBuilder();
 
     }
+
+    public static void preOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        preOrderString.append(root.getData() + " ");
+        preOrder(root.getLeft());
+        preOrder(root.getRight());
+    }
 }
