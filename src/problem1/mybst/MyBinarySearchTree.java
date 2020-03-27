@@ -8,17 +8,11 @@ package problem1.mybst;
 
 import problem1.node.TreeNode;
 
+import java.util.Queue;
+
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
-    public static StringBuilder preOrderString;
-    static int levels = 0;
-    public TreeNode root;
-
-    public MyBinarySearchTree() {
-        this.root = null;
-        preOrderString = new StringBuilder();
-
-    }
+    static Queue<TreeNode> q;
 
     public TreeNode insert(TreeNode root, int x) {
 
@@ -38,37 +32,17 @@ public class MyBinarySearchTree {
 
     }
 
-    public static void preOrder(TreeNode root) {
-        if (root == null) {
-            return;
+    public void inorderRec(TreeNode root) {
+
+        if (root.getLeft() != null) {
+
+            inorderRec(root.getLeft());
+
+            System.out.println(root.getData());
+
+            inorderRec(root.getRight());
+
         }
-        preOrderString.append(root.getData() + " ");
-        preOrder(root.getLeft());
-        preOrder(root.getRight());
-    }
 
-    public void add(final int value) {
-        this.root = addService(this.root, value);
-    }
-
-    private TreeNode addService(final TreeNode treeRoot, final int addingValue) {
-        if (treeRoot == null)
-            return new TreeNode(addingValue);
-        if (addingValue < treeRoot.getData())
-            treeRoot.setLeft(addService(treeRoot.getLeft(), addingValue));
-        else if (addingValue == treeRoot.getData())
-            return treeRoot;
-        else
-            treeRoot.setRight(addService(treeRoot.getRight(), addingValue));
-        return treeRoot;
-    }
-
-    public void postOrder(TreeNode root) {
-        if (root == null) {
-            return;
-        }
-        postOrder(root.getLeft());
-        postOrder(root.getRight());
-        System.out.println(root.getData() + " ");
     }
 }
