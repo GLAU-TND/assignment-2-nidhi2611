@@ -44,4 +44,13 @@ public class MyBinarySearchTree {
             treeRoot.setRight(addService(treeRoot.getRight(), addingValue));
         return treeRoot;
     }
+
+    public void postOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        postOrder(root.getLeft());
+        postOrder(root.getRight());
+        System.out.println(root.getData() + " ");
+    }
 }
