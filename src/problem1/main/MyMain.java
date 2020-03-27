@@ -33,4 +33,6 @@ public class MyMain {
         mst.insert(root, 45);
 
         mst.insert(root, 6);
+        mst.leftView(root);
     }
+}
