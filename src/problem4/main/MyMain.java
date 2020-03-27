@@ -22,5 +22,6 @@ public class MyMain {
         for (int i = 0; i < sc.nextInt(); i++) {
             tree.add(sc.nextInt());
         }
+        queue.enqueue(tree.root);
     }
 }
