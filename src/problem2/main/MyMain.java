@@ -42,5 +42,10 @@ public class MyMain {
         mst.insert(root, 6);
 
         mst.insert(root, 3);
+        t.printPreorder(root);
+
+        System.out.println();
+
+        t.printPostorder(root);
     }
 }
